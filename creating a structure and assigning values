@@ -1,0 +1,16 @@
+// Creating a structure variable and assign values to it
+#include<string.h>
+#include<conio.h>
+struct details
+{
+    int rollno;
+    char name[20];
+    int age;
+};
+void main()
+{
+    struct details b1={7,"maha",19};
+    struct details b2={12,"janu",20};
+    printf("%d  %s %d\n",b1.rollno,b1.name,b1.age);
+    printf("%d  %s %d\n",b2.rollno,b2.name,b2.age);
+}
