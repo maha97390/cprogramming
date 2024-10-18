@@ -1,0 +1,21 @@
+//defining a structure
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+struct person
+{
+    int age;
+    char name[20];
+};
+void main()
+{
+    struct person b1;
+    struct person b2;
+    printf("\nEnter your name:");
+    scanf("%s",b1.name);
+    printf("\nEnter age:");
+    scanf("%d",&b2.age);
+    printf("\nName: %s",b1.name);
+    printf("\nAge: %d",b2.age);
+
+}
