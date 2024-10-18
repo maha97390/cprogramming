@@ -1,0 +1,33 @@
+//finding prime's of n numbers using recursion function
+#include<stdio.h>
+void prime(int m);
+void main()
+{
+    int n;
+    printf("Enter the range\n");
+    scanf("%d",&n);
+    prime(n);
+}
+void prime(int m)
+{
+    if(m!=1)
+    {
+    int count=0;
+    for(int i=2;i<m;i++)
+    {
+
+        if(m%i==0)
+        {
+            count=1;
+        }
+
+    }
+    if(count==0)
+        {
+            printf("%d\n",m);
+        }
+    prime(m-1);
+
+    }
+}
+
