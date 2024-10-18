@@ -15,6 +15,7 @@ int sumofdigits(int n)
     {
                 return result;
     }
-    result=n%10+sumofdigits(n/10);
+    result=n%10+result;
+    sumofdigits(n/10);
     return result;
 }
