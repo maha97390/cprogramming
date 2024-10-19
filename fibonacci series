@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n1=0,n2=1,a,i,sum;
+    printf("Enter number :");
+    scanf("%d",&a);
+    printf("\nthe fibonacci series is:");
+     for (int i=0;i<=a;i++)
+        {
+        if (i<=1)
+        {
+            sum=i;
+        }
+     else
+        {
+            sum=n1+n2;
+            n1=n2;
+            n2=sum;
+        }
+        printf("%d ", sum);
+    }
+    printf("\n");
+
+}
