@@ -1,0 +1,13 @@
+//files
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+FILE *ptr;
+ptr=fopen("sample.txt","r");
+if(ptr == NULL)
+{
+    printf("northing in it");
+}
+fclose(ptr);
+}
